@@ -1,0 +1,166 @@
+body{
+    background-color: #dce1e6;
+    margin: 0;
+}
+
+.photo{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-image: url("../Images/um5sSPeV2zg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center .block{
+    background-color: white;
+    width: 50%;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.center .block .content{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.center .block .content .name{
+    font-size: 24px;
+}
+
+.center .block .content .status{
+    font-size: 16px;
+}
+
+.center .block .content .panel{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 760px) 
+{
+    .center .block .content .panel .block-info{
+        margin-left: 0px;
+    }
+}
+
+@media (min-width: 760px) 
+{
+    .center .block .content .panel .block-info{
+        margin-left: 10px;
+    }
+}
+
+.center .block .content .panel .block-study, .block-info{
+    display: flex;
+    align-items: center;
+}
+
+.center .block .content .panel .block-study p, .block-info span{
+    margin-left: 10px;
+}
+
+.center .block .content .panel .block-info{
+    border: 0;
+    background-color: transparent;
+}
+
+.center .block .content .panel .block-study:hover, .block-info:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.post{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+    width: 50%;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.post .content{
+    font-size: 18px;
+}
+
+.modal-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-info .block{
+    width: 45%;
+    height: 75%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.modal-info .btn-close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border: 0;
+    border-radius: 50%;
+    bottom: 37%;
+    left: 10px;
+    font-size: 16px;
+}
+
+.modal-info .btn-close:hover{
+    cursor: pointer;
+}
+
+.modal-info .block p{
+    margin: 20px;
+}
+
+.modal-info .block .content p{
+    margin: 10px;
+}
+
+.hidden{
+    display: none;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    width: 97vw;
+    height: 50px;
+    background-color: #0077ff;
+    padding: 5px 20px 5px 20px;
+    margin-bottom: 10px;
+}
+
+.nav .name{
+    color: white;
+    padding: 0;
+}
+
+.date{
+    font-size: 70%;
+    margin-left: 90vh;
+}
